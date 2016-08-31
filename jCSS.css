@@ -1,0 +1,47 @@
+.midDiv{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#midText{
+  display: none;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: black;
+  color: white;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: black;
+  display: none;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+  color:white;
+}
+
+ul {
+    margin: 0 0;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+    font-size: 5em;
+}
