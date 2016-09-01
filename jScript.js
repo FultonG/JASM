@@ -12,7 +12,7 @@ $(document).ready(function(){
       $("#midText").text("Jas Open: Youtube");
       $("#middleDiv").fadeIn("slow","linear");
     },
-    'Jas open youtube': function(){
+    'Jas open video': function(){
       window.open("https://www.youtube.com/");
     }
   };
