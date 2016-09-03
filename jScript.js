@@ -6,12 +6,16 @@ $(document).ready(function(){
   });
 
   if (annyang) {
-  // Let's define our first command. First the text we expect, and then the function it should call
-  var commands = {
-    'jazz help': function() {
+    var help = function() {
       $("#midText").text("No one can help you now");
       $("#middleDiv").fadeIn("slow","linear");
     }
+  // Let's define our first command. First the text we expect, and then the function it should call
+
+  console.log("working");
+  var commands = {
+    'Jazz help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (help|halp|hell)$/, 'callback': help}
+
   };
 
   // Add our commands to annyang
