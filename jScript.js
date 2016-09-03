@@ -68,10 +68,10 @@ function date(){
     }
 
     if(hours >= 11){
-      $("#meridianDesignation").text("A.M");
+      $("#meridianDesignation").text("A.M.");
     }
     else{
-      $("#meridianDesignation").text("P.M");
+      $("#meridianDesignation").text("P.M.");
     }
   	// Add a leading zero to the hours value
   	$("#hours").html(( hours < 10 ? "0" : "" ) + hours + ":");
