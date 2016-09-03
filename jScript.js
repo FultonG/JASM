@@ -7,19 +7,12 @@ $(document).ready(function(){
 
   if (annyang) {
     function help() {
-      console.log("help");
       $("#midText").text("Jas Open: Youtube");
       $("#middleDiv").fadeIn("slow","linear");
     }
-
-    function video(){
-      console.log("video");
-        window.open("https://www.youtube.com/");
-    }
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
-    'Jazz help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (help|halp|hell)$/, 'callback': help()},
-    'Jas open video': {'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (open) (video)$/, 'callback': video()}
+    'Jazz help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (help|halp|hell)$/, 'callback': help()};
   };
 
   // Add our commands to annyang
