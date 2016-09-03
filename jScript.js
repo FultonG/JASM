@@ -9,7 +9,7 @@ $(document).ready(function(){
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
     'jazz help': function() {
-      $("#midText").text("Jas Open: Youtube");
+      $("#midText").text("No one can help you now");
       $("#middleDiv").fadeIn("slow","linear");
     }
   };
