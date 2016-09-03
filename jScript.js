@@ -8,7 +8,7 @@ $(document).ready(function(){
   if (annyang) {
     var help = function() {
       $("#midText").text("No one can help you now");
-      $("#middleDiv").fadeIn("slow","linear");
+      $("#middleDiv").fadeIn("fast","linear");
     }
   // Let's define our first command. First the text we expect, and then the function it should call
 
@@ -55,7 +55,7 @@ function date(){
   setInterval( function() {
   	// Create a newDate() object and extract the hours of the current time on the visitor's
   	var hours = new Date().getHours();
-
+    console.log(new Date().getHours());
     if(hours == 1){
       $("#weekday").text(dayNames[date.getDay()] + ", ");
       $("#month").text(monthNames[date.getMonth()] + " " );
@@ -67,8 +67,11 @@ function date(){
       hours = hours % 12;
     }
 
-    if(hours >= 11){
+    if(hours < 12){
       $("#meridianDesignation").text("A.M.");
+      if(hours === 0){
+        hours = 12;
+      }
     }
     else{
       $("#meridianDesignation").text("P.M.");
