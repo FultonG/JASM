@@ -7,14 +7,18 @@ $(document).ready(function(){
 
   if (annyang) {
     var help = function() {
-      $("#midText").text("No one can help you now");
+      $("#midText").text("Jas, Checkout My Mixtape");
       $("#middleDiv").fadeIn("fast","linear");
+    }
+
+    var mixtape = function(){
+      window.open('fultongarcia.com');
     }
   // Let's define our first command. First the text we expect, and then the function it should call
 
   var commands = {
     'Jazz help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (help|halp|hell)$/, 'callback': help},
-    'Jazz check out my mixtape':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (cheque|check) (out) (my|mai) (mixtape|mix tape)$/, 'callback': help}
+    'Jazz check out my mixtape':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (cheque|check) (out) (my|mai) (mixtape|mix tape)$/, 'callback': mixtape}
 
   };
 
