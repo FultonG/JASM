@@ -12,9 +12,9 @@ $(document).ready(function(){
     }
   // Let's define our first command. First the text we expect, and then the function it should call
 
-  console.log("working");
   var commands = {
-    'Jazz help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (help|halp|hell)$/, 'callback': help}
+    'Jazz help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (help|halp|hell)$/, 'callback': help},
+    'Jazz check out my mixtape':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (cheque|check) (out) (my|mai) (mixtape|mix tape)$/, 'callback': help}
 
   };
 
@@ -55,7 +55,7 @@ function date(){
   setInterval( function() {
   	// Create a newDate() object and extract the hours of the current time on the visitor's
   	var hours = new Date().getHours();
-    console.log(new Date().getHours());
+
     if(hours == 1){
       $("#weekday").text(dayNames[date.getDay()] + ", ");
       $("#month").text(monthNames[date.getMonth()] + " " );
