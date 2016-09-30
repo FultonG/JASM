@@ -12,7 +12,7 @@ $(document).ready(function(){
     }
 
     var mixtape = function(){
-      window.open('fultongarcia.com');
+      window.open('https://fultongarcia.com');
     }
   // Let's define our first command. First the text we expect, and then the function it should call
 
@@ -80,7 +80,7 @@ function date(){
     if(hours > 12){
       hours = hours % 12;
     }
-    
+
   	// Add a leading zero to the hours value
   	$("#hours").html(( hours < 10 ? "0" : "" ) + hours + ":");
       }, 1000);
