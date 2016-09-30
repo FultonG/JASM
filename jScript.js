@@ -67,10 +67,6 @@ function date(){
       $("#year").text(date.getFullYear());
     }
 
-    if(hours > 12){
-      hours = hours % 12;
-    }
-
     if(hours < 12){
       $("#meridianDesignation").text("A.M.");
       if(hours === 0){
@@ -80,6 +76,11 @@ function date(){
     else{
       $("#meridianDesignation").text("P.M.");
     }
+
+    if(hours > 12){
+      hours = hours % 12;
+    }
+    
   	// Add a leading zero to the hours value
   	$("#hours").html(( hours < 10 ? "0" : "" ) + hours + ":");
       }, 1000);
