@@ -14,11 +14,16 @@ $(document).ready(function(){
     var mixtape = function(){
       window.open('https://fultongarcia.com');
     }
+
+    var chill = function(){
+      window.open('https://www.netflix.com/browse');
+    }
   // Let's define our first command. First the text we expect, and then the function it should call
 
   var commands = {
     'Jazz help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (help|halp|hell)$/, 'callback': help},
-    'Jazz check out my mixtape':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (cheque|check) (out) (my|mai) (mixtape|mix tape)$/, 'callback': mixtape}
+    'Jazz check out my mixtape':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (cheque|check) (out) (my|mai) (mixtape|mix tape)$/, 'callback': mixtape},
+    'Jazz Netflix and Chill':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz) (netflicks|notflex|netflex) (and) (chill)$/, 'callback': chill}
 
   };
 
