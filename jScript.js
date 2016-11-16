@@ -23,7 +23,7 @@ $(document).ready(function(){
       $("#middleDiv").fadeOut("fast","linear");
       $("#midText").text("");
     }
-    var print = (words){
+    var print = function(words){
       console.log(words);
     }
 
