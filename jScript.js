@@ -19,14 +19,6 @@ $(document).ready(function(){
       window.open('https://www.netflix.com/browse');
     }
 
-    var print = function(tag){
-      console.log(tag);
-    }
-
-    var print1 = function(tag){
-      console.log('Not Jas: '+ tag);
-    }
-
     var home = function(){
       $("#middleDiv").fadeOut("fast","linear");
       $("#midText").text("");
@@ -35,12 +27,10 @@ $(document).ready(function(){
   // Let's define our first command. First the text we expect, and then the function it should call
 
   var commands = {
-    'Jazz help': help,
-    'Jazz home': home,
-    'Jazz check out my mixtape': mixtape,
-    'Jazz (net flicks)(Netflicks)(Netflix) and Chill': chill,
-    'Jazz *tag': print1,
-    '*tag': print
+    '(Jazz) help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance) (help|halp|hell|house)$/, 'callback': help},
+    '(Jazz) mixtape':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance) (mixtape|mix tape)$/, 'callback': mixtape},
+    '(Jazz) chill':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance) (chill)$/, 'callback': chill},
+    '(Jazz) home':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance) (home)$/, 'callback': home}
 
   };
 
