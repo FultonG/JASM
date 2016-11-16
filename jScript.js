@@ -18,12 +18,17 @@ $(document).ready(function(){
     var chill = function(){
       window.open('https://www.netflix.com/browse');
     }
+
+    var print = function(tag){
+      console.log(tag);
+    };
   // Let's define our first command. First the text we expect, and then the function it should call
 
   var commands = {
     'Jazz help': help,
     'Jazz check out my mixtape': mixtape,
-    'Jazz (net flicks)(Netflicks)(Netflix) and Chill': chill
+    'Jazz (net flicks)(Netflicks)(Netflix) and Chill': chill,
+    'Jazz *tag': print
 
   };
 
