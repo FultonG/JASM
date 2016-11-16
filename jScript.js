@@ -23,6 +23,9 @@ $(document).ready(function(){
       $("#middleDiv").fadeOut("fast","linear");
       $("#midText").text("");
     }
+    var print = (words){
+      console.log(words);
+    }
 
   // Let's define our first command. First the text we expect, and then the function it should call
 
@@ -30,7 +33,8 @@ $(document).ready(function(){
     'Jazz help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (help|halp|hell|house)$/, 'callback': help},
     'Jazz mixtape':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (mixtape|mix tape)$/, 'callback': mixtape},
     'Jazz chill':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (chill)$/, 'callback': chill},
-    'Jazz home':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (home)$/, 'callback': home}
+    'Jazz home':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (home)$/, 'callback': home},
+    '(Jazz) *words': print
 
   };
 
