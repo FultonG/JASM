@@ -7,7 +7,7 @@ $(document).ready(function(){
 
   if (annyang) {
     var help = function() {
-      $("#midText").text("Jas, Checkout My Mixtape");
+      $("#midText").text("Jas, Mixtape\nJas, Chill\nJas, Home");
       $("#middleDiv").fadeIn("fast","linear");
     }
 
@@ -27,10 +27,10 @@ $(document).ready(function(){
   // Let's define our first command. First the text we expect, and then the function it should call
 
   var commands = {
-    '(Jazz) help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance) (help|halp|hell|house)$/, 'callback': help},
-    '(Jazz) mixtape':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance) (mixtape|mix tape)$/, 'callback': mixtape},
-    '(Jazz) chill':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance) (chill)$/, 'callback': chill},
-    '(Jazz) home':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance) (home)$/, 'callback': home}
+    '(Jazz) help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (help|halp|hell|house)$/, 'callback': help},
+    '(Jazz) mixtape':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (mixtape|mix tape)$/, 'callback': mixtape},
+    '(Jazz) chill':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (chill)$/, 'callback': chill},
+    '(Jazz) home':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (home)$/, 'callback': home}
 
   };
 
