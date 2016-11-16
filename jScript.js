@@ -39,7 +39,7 @@ $(document).ready(function(){
     'Jazz home': home,
     'Jazz check out my mixtape': mixtape,
     'Jazz (net flicks)(Netflicks)(Netflix) and Chill': chill,
-    'Jazz *tag': print,
+    'Jazz *tag': print1,
     '*tag': print
 
   };
