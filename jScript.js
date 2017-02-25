@@ -7,7 +7,7 @@ $(document).ready(function(){
 
   if (annyang) {
     var help = function() {
-      $("#midText").text("Jas, Mixtape\nJas, Chill\nJas, Home");
+      $("#midText").text("Jas, Mixtape\nJas, Chill\nJas, Home").html(obj.html().replace(/\n/g,'<br/>'));
       $("#middleDiv").fadeIn("fast","linear");
     }
 
