@@ -30,7 +30,7 @@ $(document).ready(function(){
   // Let's define our first command. First the text we expect, and then the function it should call
 
   var commands = {
-    'Jazz help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (help|halp|hell|house)$/, 'callback': help},
+    '(Jazz) help':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (help|halp|hell|house|health)$/, 'callback': help},
     'Jazz mixtape':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (mixtape|mix tape)$/, 'callback': mixtape},
     'Jazz chill':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (chill)$/, 'callback': chill},
     'Jazz home':{'regexp': /^(jazz|jaz|yazz|yes|chaz|has|jaws|Jazz|chas|chance|just) (home)$/, 'callback': home},
